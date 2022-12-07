@@ -4,6 +4,7 @@ html {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .hidden {
@@ -470,8 +471,22 @@ html {
   #cours > main {
     min-height: 70vh;
     width: 100%;
-    color: #010630;
     background: #f0f0f0;
+  }
+  #cours > main > article {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+  }
+  #cours > main > article header {
+    background-color: #00398f;
+    padding: 10px;
+    margin: 1rem;
+  }
+  #cours > main > article header h2 {
+    color: #8ae7c3;
+  }
+  #cours > main > article header p {
+    color: #fff;
   }
   #cours > footer {
     background-color: #010630;
